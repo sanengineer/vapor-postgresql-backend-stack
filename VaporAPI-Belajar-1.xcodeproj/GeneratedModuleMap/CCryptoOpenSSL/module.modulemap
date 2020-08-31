@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/metalbee/Documents/Work/Web_Dev/Backend_Dev/Server-side_Swift/VaporAPI_Belajar_1/.build/checkouts/crypto.git-6312442927313866740/Sources/CCryptoOpenSSL/include"
+    export *
+}

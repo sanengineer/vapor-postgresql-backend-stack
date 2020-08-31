@@ -1,0 +1,4 @@
+module CNIOOpenSSL {
+    umbrella "/Users/metalbee/Documents/Work/Web_Dev/Backend_Dev/Server-side_Swift/VaporAPI_Belajar_1/.build/checkouts/swift-nio-ssl.git--4371688726190927232/Sources/CNIOOpenSSL/include"
+    export *
+}
