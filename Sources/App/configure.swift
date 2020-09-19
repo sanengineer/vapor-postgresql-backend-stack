@@ -56,8 +56,8 @@ public func configure(
         allowedHeaders: [.accept, .authorization, .contentType, .origin, .xRequestedWith, .userAgent, .accessControlAllowOrigin]
     ) // CORS Allow Control Acces Cross Origin Policy
     let corsMiddleware = CORSMiddleware(configuration: corsConfiguration)
-    middlewares.use(corsMiddleware)
 
+    middlewares.use(corsMiddleware) // Allow Control Access Cross Origin
     middlewares.use(FileMiddleware.self) // Serves files from `Public/` directory
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
     services.register(middlewares)
