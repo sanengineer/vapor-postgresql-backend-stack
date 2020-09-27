@@ -62,7 +62,7 @@ public func configure(
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
     services.register(middlewares)
     
-    // Configure a PostgreSQL database
+    // Configure a PostgreSQL database local
     let config = PostgreSQLDatabaseConfig(
         hostname: "localhost",
         port: 5432,
@@ -70,6 +70,7 @@ public func configure(
         database: "CupcakesCorner",
         password: nil,
         transport: .cleartext)
+
     let postgres = PostgreSQLDatabase(config: config)
     
     /// Register the configured PostgreSQL database to the database config.
